@@ -11,6 +11,11 @@ services:
     networks:
       - mynetwork
 
+
+  backend:
+    
+  frontend:
+
 networks:
   mynetwork: 
 volumes: 
