@@ -6,7 +6,7 @@ from typing import Optional
 class ProductBase(BaseModel) :
     name : str
     description : Optional[str] = None
-    prince : PositiveFloat
+    price : PositiveFloat
     category : str
     vendor_email: EmailStr
 
@@ -16,7 +16,7 @@ class ProductCreate(ProductBase) :
 class ProductUpdate(ProductBase) :
     name : Optional[str] = None
     description : Optional[str] = None
-    prince : Optional[PositiveFloat] = None
+    price : Optional[PositiveFloat] = None
     category : Optional[str] = None
     vendor_email: Optional[EmailStr] = None
 

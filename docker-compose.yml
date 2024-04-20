@@ -12,10 +12,11 @@ services:
       - mynetwork
 
   backend:
-    build: ./backend
-    dockerfile: Dockerfile
+    build: 
+      context: ./src/backend
+      dockerfile: Dockerfile
     volumes:
-      - ./backend:/app
+      - ./src/backend:/app
     environment:
       DATABASE_URL: postgresql://user:password@postgres/mydatabase
     ports:
