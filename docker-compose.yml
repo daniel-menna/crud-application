@@ -11,10 +11,19 @@ services:
     networks:
       - mynetwork
 
-
   backend:
-    
-  frontend:
+    build: ./backend
+    dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app
+    environment:
+      DATABASE_URL: postgresql://user:password@postgres/mydatabase
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    networks:
+      - mynetwork
 
 networks:
   mynetwork: 
