@@ -5,7 +5,7 @@ from typing import Optional
 
 class ProductBase(BaseModel) :
     name : str
-    description : str
+    description : Optional[str] = None
     prince : PositiveFloat
     category : str
     vendor_email: EmailStr
