@@ -13,6 +13,7 @@ fastapi = "^0.110.2"
 uvicorn = {extras = ["standard"], version = "^0.29.0"}
 psycopg2 = "^2.9.9"
 email-validator = "^2.1.1"
+streamlit = "^1.33.0"
 
 
 [build-system]
