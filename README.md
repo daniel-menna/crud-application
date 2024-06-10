@@ -1,41 +1,41 @@
-# Product Management CRUD for E-commerce
+# CRUD para gestão de produtos em uma plataforma de E-commerce
 
-This project consists of a CRUD (Create, Read, Update, Delete) developed in Python for managing product registrations on an e-commerce platform. The application uses technologies like Streamlit, Pydantic, SQLAlchemy, and Pandas to offer an intuitive interface and robust functionalities.
+Este projeto consiste em criar um CRUD (Create, Read, Update, Delete) desenvolvido em Python para gerenciar registros de produtos em uma plataforma de e-commerce. A aplicação utiliza tecnologias como Streamlit, Pydantic, SQLAlchemy e Pandas para oferecer uma interface intuitiva e funcionalidades robustas.
 
-## Features
+## Funcionalidades
 
--   **Creation:** Add new products to the database, providing information such as name, description, price, and category.
--   **Requisition:** Easily query registered products, filtering by name, category, or other criteria.
--   **Update:** Update information of existing products, ensuring the accuracy and relevance of data.
--   **Delete:** Delete products that are no longer needed, keeping the database organized.
+-   **Creation:** Adicione novos produtos ao banco de dados, fornecendo informações como nome, descrição, preço e categoria.
+-   **Requisition:** Consulte facilmente os produtos cadastrados, filtrando por nome, categoria ou outros critérios.
+-   **Update:** Atualize as informações dos produtos existentes, garantindo a precisão e a relevância dos dados.
+-   **Delete:** Exclua produtos que não são mais necessários, mantendo o banco de dados organizado.
 
 ## Technologies Used
 
--   **[Python:](https://www.python.org/)** Main programming language of the project (version 3.12.1).
--   **[Streamlit:](https://streamlit.io/)** Library for creating web interfaces in Python quickly and easily.
--   **[Pydantic:](https://github.com/pydantic/pydantic)** Used for data validation and serialization.
--   **[SQLAlchemy:](https://www.sqlalchemy.org/)** ORM framework for relational database manipulation.
--   **[Pandas:](https://pandas.pydata.org/)** Powerful tool for data analysis and manipulation in Python.
+-   **[Python:](https://www.python.org/)** Principal linguagem deste projeto (version 3.12.1).
+-   **[Streamlit:](https://streamlit.io/)** Biblioteca python para a criação de aplicações web de forma fácil e rapida.
+-   **[Pydantic:](https://github.com/pydantic/pydantic)** Usada para validação e serialização dos dados.
+-   **[SQLAlchemy:](https://www.sqlalchemy.org/)** framework ORM para manipulação de dados relacionais.
+-   **[Pandas:](https://pandas.pydata.org/)** Poderosa ferramenta para manipulação e análise de dados em Python.
 
-## Configuration and Usage
+## Configuração e Uso
 
-The project is containerized with [Docker](https://www.docker.com/), consisting of database, backend and frontend layers.
+Este projeto é construido utilizando containers [Docker](https://www.docker.com/), consistindo na base de dados e as camas de backend e frontend.
 
-### Database
-The database layer includes a configured instance of [PostgreSQL](https://www.postgresql.org/).
+### Base de Dados
+A camada da base de dados consiste em uma instância configura de [PostgreSQL](https://www.postgresql.org/).
 
 ### Backend
 
-The backend layer contains the Python application and its dependencies.
+A camada de backend contem a aplicação Python e as suas dependências.
 
 ### Frontend
 
-The frontend layer contains the Streamlit web interface.
+O frontend contém em sua camada uma interface web com Streamlit.
 
 ### Docker Compose
 
-To install and build all three layers of the application, you can use Docker Compose. Simply run `docker-compose up --build` to build and start the containers. 
+Para installar e executar o build destre projeto, você pode utilizar o Docker Compose. Rode `docker-compose up --build` para criar a instância e executar a aplicação. 
 
-## Contribution
+## Contribuições
 
-Contributions are welcome! Feel free to open issues reporting problems or suggestions, and to send pull requests with improvements.
+Contribuições são bem-vindas! Fique a vontade para reportar problemas ou sugestões, envie pull requests com as melhorias.
